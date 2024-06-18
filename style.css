@@ -19,6 +19,7 @@ body {
 /* ESTILO DO CABEÇALIO*/
 header { 
     padding: 40px 4%;
+    align-items: center;
 }
 
 header > .interface {
@@ -28,17 +29,22 @@ header > .interface {
 }
 
 header a {
-    color: white;
+    color: rgb(91, 87, 87);
     text-decoration: none;
 }
 
+header a:hover {
+    color: azure;
+    transform: scale(1.05);
+}
+
 header nav ul {
-    list-style-type: none;
+    display: flex;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 15px;
 }
 
 header .btn-contato button {
@@ -49,4 +55,9 @@ header .btn-contato button {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+}
+
+header div a img {
+    max-width: 30%;
+    max-height: 30%;
 }
